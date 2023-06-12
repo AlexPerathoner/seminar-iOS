@@ -4237,7 +4237,6 @@
 					B657A8E51CA646EB00121384 = {
 						CreatedOnToolsVersion = 7.3;
 						LastSwiftMigration = 1020;
-						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.AccessWiFi = {
 								enabled = 1;
@@ -4275,9 +4274,7 @@
 					};
 					B657A9061CA646EB00121384 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = QMQYCKL255;
 						LastSwiftMigration = 1020;
-						ProvisioningStyle = Automatic;
 						TestTargetID = B657A8E51CA646EB00121384;
 					};
 					B66C58A4215086F0004AB261 = {
@@ -4339,7 +4336,6 @@
 					};
 					B6CC5D812159D10D00833E5D = {
 						CreatedOnToolsVersion = 10.0;
-						DevelopmentTeam = QMQYCKL255;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -4369,9 +4365,7 @@
 					};
 					D03D894120E0BC1800D4F28D = {
 						CreatedOnToolsVersion = 9.4.1;
-						DevelopmentTeam = QMQYCKL255;
 						LastSwiftMigration = 1020;
-						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -6586,7 +6580,9 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Configuration/Entitlements/Launcher.entitlements;
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				DEVELOPMENT_TEAM = XX9N244QQT;
 				INFOPLIST_FILE = Sources/Launcher/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexpera.com.io.robbie.HomeAssistant.dev.Launcher;
 				PRODUCT_NAME = "Home Assistant Launcher";
 				PROVISIONING_SUFFIX = .Launcher;
 				SDKROOT = macosx;
@@ -6667,6 +6663,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${BUNDLE_ID_SUFFIX}";
 				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/App-ios.entitlements";
 				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/App-catalyst.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XX9N244QQT;
 				ENV_URL_HANDLER = "homeassistant-beta";
 				INFOPLIST_FILE = Sources/App/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -6694,8 +6693,10 @@
 					"\"UIKit\"",
 					"$(inherited)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexpera.com.io.robbie.HomeAssistant.beta-nc";
 				PRODUCT_MODULE_NAME = HomeAssistant;
 				PRODUCT_NAME = "Home Assistant β";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = NO;
 				SUPPORTS_MACCATALYST = YES;
 			};
@@ -6715,12 +6716,17 @@
 		B637243221697585006B102A /* Beta */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XX9N244QQT;
 				INFOPLIST_FILE = Tests/UI/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexpera.com.io.robbie.HomeAssistant.beta-nc.HomeAssistantUITests";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				PROVISIONING_SUFFIX = .HomeAssistantUITests;
 				TEST_TARGET_NAME = App;
 			};
@@ -6790,12 +6796,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 287FA864ED0E47B2BB71E1C8 /* Pods-iOS-Shared-iOS-Tests-Shared.beta.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XX9N244QQT;
 				INFOPLIST_FILE = Tests/Shared/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexpera.com.io.robbie.HomeAssistant.beta-nc.SharedTests";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				PROVISIONING_SUFFIX = .SharedTests;
 			};
 			name = Beta;
@@ -6881,6 +6892,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${BUNDLE_ID_SUFFIX}";
 				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/App-ios.entitlements";
 				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/App-catalyst.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XX9N244QQT;
 				ENV_URL_HANDLER = "homeassistant-dev";
 				INFOPLIST_FILE = Sources/App/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -6908,8 +6922,10 @@
 					"\"UIKit\"",
 					"$(inherited)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexpera.com.io.robbie.HomeAssistant.dev;
 				PRODUCT_MODULE_NAME = HomeAssistant;
 				PRODUCT_NAME = "Home Assistant Δ";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = NO;
 				SUPPORTS_MACCATALYST = YES;
 			};
@@ -6922,6 +6938,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${BUNDLE_ID_SUFFIX}";
 				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/App-ios.entitlements";
 				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/App-catalyst.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XX9N244QQT;
 				ENV_URL_HANDLER = homeassistant;
 				INFOPLIST_FILE = Sources/App/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -6949,8 +6968,10 @@
 					"\"UIKit\"",
 					"$(inherited)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexpera.com.io.robbie.HomeAssistant;
 				PRODUCT_MODULE_NAME = HomeAssistant;
 				PRODUCT_NAME = "Home Assistant";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = NO;
 				SUPPORTS_MACCATALYST = YES;
 			};
@@ -6961,7 +6982,9 @@
 			baseConfigurationReference = 479C2CCB032E2A0ECDE45B87 /* Pods-Tests-App.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XX9N244QQT;
 				INFOPLIST_FILE = Tests/App/Resources/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexpera.com.io.robbie.HomeAssistant.dev.HomeAssistantTests;
 				PROVISIONING_SUFFIX = .HomeAssistantTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Home Assistant Δ.app/Home Assistant Δ";
 			};
@@ -6972,7 +6995,12 @@
 			baseConfigurationReference = F3A0FB3BD04C582E655168D0 /* Pods-Tests-App.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XX9N244QQT;
 				INFOPLIST_FILE = Tests/App/Resources/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexpera.com.io.robbie.HomeAssistant.HomeAssistantTests;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				PROVISIONING_SUFFIX = .HomeAssistantTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Home Assistant Δ.app/Home Assistant Δ";
 			};
@@ -6981,12 +7009,14 @@
 		B657A9171CA646EB00121384 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = XX9N244QQT;
 				INFOPLIST_FILE = Tests/UI/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexpera.com.io.robbie.HomeAssistant.dev.HomeAssistantUITests;
 				PROVISIONING_SUFFIX = .HomeAssistantUITests;
 				TEST_TARGET_NAME = App;
 			};
@@ -6995,12 +7025,17 @@
 		B657A9181CA646EB00121384 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XX9N244QQT;
 				INFOPLIST_FILE = Tests/UI/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexpera.com.io.robbie.HomeAssistant.HomeAssistantUITests;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				PROVISIONING_SUFFIX = .HomeAssistantUITests;
 				TEST_TARGET_NAME = App;
 			};
@@ -7231,6 +7266,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "WatchIcon${BUNDLE_ID_SUFFIX}";
+				DEVELOPMENT_TEAM = XX9N244QQT;
 				IBSC_MODULE = WatchExtension_Watch;
 				INFOPLIST_FILE = Sources/WatchApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -7349,12 +7385,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 32DB55A889E2163C52C335D2 /* Pods-iOS-Shared-iOS-Tests-Shared.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = XX9N244QQT;
 				INFOPLIST_FILE = Tests/Shared/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexpera.com.io.robbie.HomeAssistant.dev.SharedTests;
 				PROVISIONING_SUFFIX = .SharedTests;
 			};
 			name = Debug;
@@ -7363,12 +7401,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D404CC38F07CE4476FCF69B4 /* Pods-iOS-Shared-iOS-Tests-Shared.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XX9N244QQT;
 				INFOPLIST_FILE = Tests/Shared/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexpera.com.io.robbie.HomeAssistant.SharedTests;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				PROVISIONING_SUFFIX = .SharedTests;
 			};
 			name = Release;
