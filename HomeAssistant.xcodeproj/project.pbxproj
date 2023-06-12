@@ -1062,6 +1062,13 @@
 			remoteGlobalIDString = D03D891620E0A85200D4F28D;
 			remoteInfo = Shared;
 		};
+		FAD776982A372AAE001145F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B657A8DE1CA646EB00121384 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6CC5D812159D10D00833E5D;
+			remoteInfo = WatchApp;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -4005,6 +4012,7 @@
 			);
 			dependencies = (
 				B657A9091CA646EB00121384 /* PBXTargetDependency */,
+				FAD776992A372AAE001145F1 /* PBXTargetDependency */,
 			);
 			name = "Tests-UI";
 			productName = HomeAssistantUITests;
@@ -6115,6 +6123,11 @@
 			target = D03D891620E0A85200D4F28D /* Shared-iOS */;
 			targetProxy = D0EEF344214F15CA00D1D360 /* PBXContainerItemProxy */;
 		};
+		FAD776992A372AAE001145F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6CC5D812159D10D00833E5D /* WatchApp */;
+			targetProxy = FAD776982A372AAE001145F1 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -6709,7 +6722,7 @@
 					"@loader_path/Frameworks",
 				);
 				PROVISIONING_SUFFIX = .HomeAssistantUITests;
-				TEST_TARGET_NAME = HomeAssistant;
+				TEST_TARGET_NAME = App;
 			};
 			name = Beta;
 		};
@@ -6975,7 +6988,7 @@
 					"@loader_path/Frameworks",
 				);
 				PROVISIONING_SUFFIX = .HomeAssistantUITests;
-				TEST_TARGET_NAME = HomeAssistant;
+				TEST_TARGET_NAME = App;
 			};
 			name = Debug;
 		};
@@ -6989,7 +7002,7 @@
 					"@loader_path/Frameworks",
 				);
 				PROVISIONING_SUFFIX = .HomeAssistantUITests;
-				TEST_TARGET_NAME = HomeAssistant;
+				TEST_TARGET_NAME = App;
 			};
 			name = Release;
 		};
